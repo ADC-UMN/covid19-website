@@ -1,0 +1,24 @@
+{
+  "name": "covid19-website",
+  "version": "1.0.0",
+  "description": "Welcome to UMN App Developers Club!",
+  "main": "index.js",
+  "scripts": {
+    "server": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ADC-UMN/covid19-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ADC-UMN/covid19-website/issues"
+  },
+  "homepage": "https://github.com/ADC-UMN/covid19-website#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.27.0",
+    "superagent": "^6.1.0"
+  }
+}

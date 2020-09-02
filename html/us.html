@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- HTML Setup for style, charset, and front end javascript -->
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="/style">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="website.js"></script>
+    </head>
+
+    <!-- When the page has completed loading, fill it with data gathered from external resources -->
+    <body onload="fillUSPage()">
+
+        <!-- Page Title Indicator -->
+        <h1 class="title">COVID-19: United States</h1>
+
+        <!-- United States Data holder -->
+        <div class="entity" id="us_entity"></div><br>
+
+        <!-- United States Individual States' Data holder -->
+        <table class="entities_table" id="states_entities_table"></table>
+    </body>
+</html>

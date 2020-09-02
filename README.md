@@ -24,6 +24,8 @@ Estimated time to complete all parts: **2 hours**
  ### Operational Structure
 Here is the structure for how to webpage makes requests and gathers data
 
+Note: Good design practice is to keep your execution logic and intents separated from your express routes
+
 ![alt text](./images/layout.PNG)
 
 ### Setup
@@ -51,15 +53,6 @@ You are going to be using a library called `superagent` to make GET requests for
 Everything to do in this part are marked with "TODO Part 1" for finding.
  - `files.js`
  - `covidData.js`
-
-### Example - Current United States Data
-When you type: `http://localhost:3000/covidData/us` in your browser:
-1. you call the express route in `routes/covidData.js Line 7`. 
-2. That express route refers to your `src/covidData.js Line 13` code. 
-3. The `src` code then sends an api request for data at CovidTracking 
-4. Returns the results all the way back to your browser.
-
-Note: Good design practice is to keep your execution logic and intents separated from your express routes
 
 ## Part 2 - Google Charts and jQuery
 

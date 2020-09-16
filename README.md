@@ -29,17 +29,19 @@ Here is the structure for how the webpage makes requests and gathers data
 ![alt text](./images/layout.PNG)
 
 ### Setup
- 1. Clone this repository to your local machine
+ 1. Fork this repository to your account
+    - This is so if you want to deploy it to Heroku, it will deploy your repository, not this repository
+ 2. Clone your newly forked repository to your local machine
     - [How To Clone](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
- 2. Open the project in an IDE or code editor at its root directory
+ 3. Open the project in an IDE or code editor at its root directory
     - [Visual Studio Code Install](https://code.visualstudio.com/download)
- 3. Run `npm init` if there is no `package.json` file
+ 4. Run `npm init` if there is no `package.json` file
     -  ENTER on everything prompted and confirm "yes"
- 4. Install the following dependencies. `npm install` also works if package.json is specified
+ 5. Install the following dependencies. `npm install` also works if package.json is specified
     - `npm install express`
     - `npm install superagent`
     - `npm install moment`
- 5. Run `npm run server`
+ 6. Run `npm run server`
 
 If everything you did is working correctly, you should be able to open your browser to `http://localhost:3000/` and see the following:
 

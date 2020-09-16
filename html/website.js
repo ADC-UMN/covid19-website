@@ -14,14 +14,13 @@ const color_ventilator = `#fdd3d4`
 
 // Google Charts line chart trend options consistent across entities
 const num_horizontal_ticks = 5
-const horizontal_axis_dates = [new Date(2020, 2), new Date(2020, 5), new Date(2020, 8)]
 const trends_options = {
-  width: 400,
+  width: (window.innerWidth - 50) / 4,
   height: 240,
   legend: `none`,
   backgroundColor: `#222222`,
   hAxis: {
-    ticks: horizontal_axis_dates
+    format: `MMM d`,
   },
   vAxis: {}
 }

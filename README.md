@@ -22,14 +22,14 @@ Estimated time to complete all parts: **2 hours**
  - `src`: Contains all of the http requests for grabbing the covid19 data from external sources
 
  ### Operational Structure
-Here is the structure for how to webpage makes requests and gathers data
+Here is the structure for how the webpage makes requests and gathers data
 
-Note: Good design practice is to keep your execution logic and intents separated from your express routes
+**Note:** Good design practice is to keep your execution logic and intents separated from your express routes
 
 ![alt text](./images/layout.PNG)
 
 ### Setup
- 1. Clone or Download this repository to your local machine
+ 1. Clone this repository to your local machine
     - [How To Clone](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
  2. Open the project in an IDE or code editor at its root directory
     - [Visual Studio Code Install](https://code.visualstudio.com/download)
@@ -41,7 +41,8 @@ Note: Good design practice is to keep your execution logic and intents separated
     - `npm install moment`
  5. Run `npm run server`
 
-If everything you did is working correctly, you should be able to open your browser to `http://localhost:3000/` and see
+If everything you did is working correctly, you should be able to open your browser to `http://localhost:3000/` and see the following:
+
 ![alt text](./images/setup_complete.PNG)
 
 ## Part 1 - How To Use An API and Express
@@ -69,15 +70,28 @@ express functions at `website.js Line 37`
 Everything to do in this part are marked with "TODO Part 2" for finding.
  - `website.js`
 
+## Heroku
+You can deploy this web app to a hosting service for free called [Heroku](https://www.heroku.com/). Heroku randomly assigns ports on calling your website, so you need to replace the following line:
+
+```
+app.listen(port, () => {
+``` 
+
+to 
+
+```
+app.listen(process.env.PORT || port, () => {
+```
+
+Steps to deploy it:
+1. Ensure that the project is up to date on your github repository
+2. Make an account on Heroku
+3. Go to the Heroku Dashboard and "Create App"
+4. Use "Connect with Github" and link it to your repository
+
 ## Congratulations
 Congratulations!!!
-You have now made a fully functioning localhost server for gathering and nicely displaying covid19 data. Feel free to expand on these by adding
-more displays, adding countries, or deploying using [Heroku](https://www.heroku.com/)
-
-## Contact For Questions
-Discord: 
-
-Email:
+You have now made a fully functioning localhost server and website you can view online for gathering and nicely displaying covid19 data. Feel free to expand on these by adding more displays, adding countries, or better data analysis or playing with the data
 
 ## Resources
  - United States and Individual State's Data: [Covid Tracking Data API](https://covidtracking.com/data/api)
